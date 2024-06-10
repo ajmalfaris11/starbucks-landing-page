@@ -38,6 +38,8 @@ section {
     position: relative;
 }
 
+/* ===== HEADER SECTION STYLES ===== */
+
 /* Header Styles */
 header {
     /* Positioning */
@@ -87,4 +89,85 @@ header ul li a {
 /* Navigation Link Hover Styles */
 header ul li a:hover {
     color: #017143;
+}
+
+/* ===== CONTENT SECTION STYLES ===== */
+
+/* Content Section */
+.content {
+    /* Positioning */
+    position: relative;
+
+    /* Box Model */
+    width: 100%;
+
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text Box */
+.content .text-box {
+    /* Positioning */
+    position: relative;
+
+    /* Box Model */
+    width: 600px;
+}
+
+/* Heading Styles */
+.content .text-box h2 {
+    /* Visual */
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+/* Span Styles */
+.content .text-box h2 span {
+    /* Visual */
+    color: #017143;
+    font-size: 1.0.5em;
+    font-weight: 900;
+}
+
+/* Paragraph Styles */
+.content .text-box p {
+    /* Visual */
+    color: #333;
+}
+
+/* Link Styles */
+.content .text-box a {
+    /* Layout */
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+
+    /* Visual */
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Image Box */
+.content .img-box {
+    /* Box Model */
+    width: 600px;
+
+    /* Layout */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+/* Image Styles */
+.content .img-box img {
+    /* Visual */
+    max-width: 340px;
 }
