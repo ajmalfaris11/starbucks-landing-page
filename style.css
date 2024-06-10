@@ -24,7 +24,7 @@ section {
     /* Box Model */
     width: 100%;
     min-height: 100vh;
-    padding: 70px 100px;
+    padding: 50px;
 
     /* Layout */
     display: flex;
@@ -63,7 +63,7 @@ header .logo {
     position: relative;
 
     /* Visual */
-    max-width: 80px;
+    max-width: 60px;
 }
 
 /* Navigation Styles */
@@ -162,14 +162,14 @@ header ul li a:hover {
     /* Layout */
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 100px;
     margin-top: 50px;
 }
 
 /* Image Styles */
 .content .img-box img {
     /* Visual */
-    max-width: 340px;
+    max-width: 250px;
 }
 
 /* Thumbnail Container */
@@ -265,5 +265,9 @@ header ul li a:hover {
     /* Visual */
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+.img3{
+    transform: rotate(340deg) scale(1.1);
 }
 
