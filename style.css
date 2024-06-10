@@ -1,0 +1,90 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wgh');
+
+/* Global Reset */
+* {
+    /* Box Model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Visual */
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Body Styles */
+body {
+    /* Typography */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Styles */
+section {
+    /* Box Model */
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 100px;
+
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Visual */
+    background: #fff;
+
+    /* Positioning */
+    position: relative;
+}
+
+/* Header Styles */
+header {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Box Model */
+    padding: 20px 100px;
+
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+header .logo {
+    /* Positioning */
+    position: relative;
+
+    /* Visual */
+    max-width: 80px;
+}
+
+/* Navigation Styles */
+header ul {
+    /* Positioning */
+    position: relative;
+
+    /* Layout */
+    display: flex;
+}
+
+/* Navigation Link Styles */
+header ul li a {
+    /* Layout */
+    display: inline-block;
+
+    /* Visual */
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+/* Navigation Link Hover Styles */
+header ul li a:hover {
+    color: #017143;
+}
