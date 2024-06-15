@@ -146,6 +146,8 @@ header ul li a:hover {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+
+
 /* Paragraph Styles */
 .content .text-box p {
     /* Visual */
@@ -165,6 +167,11 @@ header ul li a:hover {
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#ExpBtn:hover {
+    padding-inline: 30px;
 }
 
 /* Image Box */

@@ -30,11 +30,25 @@
     }
 
     function colorChange(color){
-        const startbuck = document.getElementById("starbucksText")
+
+        const animatedTextElements = document.getElementsByClassName("animatedText");
+        animatedTextElements[0].style.opacity = "0";
+        animatedTextElements[0].style.transition = "0s";
+        animatedTextElements[0].style.transform = "translateX(-200px)";
+        Array.from(animatedTextElements).forEach(function(element) {
+            // Add animation class after a short delay
+            setTimeout(function() {
+              animatedTextElements[0].style.transition = "1s";
+              element.style.opacity = "1";
+              element.style.transform = "translateX(0)";
+            }, 100); 
+          });
+          const startbuck = document.getElementById("starbucksText")
         const circle = document.querySelector(".circle")
         document.getElementById('ExpBtn').style.background = color ;
         circle.style.background = color;
         startbuck.style.color = color
+
     }
 
      // Animation
