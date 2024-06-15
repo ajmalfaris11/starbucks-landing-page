@@ -125,12 +125,25 @@ header ul li a:hover {
     font-weight: 500;
 }
 
-/* Span Styles */
-.content .text-box h2 span {
+
+#starbucksText {
     /* Visual */
     color: #017143;
-    font-size: 1.0.5em;
-    font-weight: 900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 86px;
+    font-weight: 1000;
+    line-height: 1.1;  
+}
+
+#starbucksDiscription{
+    margin-block: 20px;
+}
+
+.animatedText {
+    opacity: 0.5;
+
+    transform: translatex(-200px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 /* Paragraph Styles */
@@ -166,6 +179,25 @@ header ul li a:hover {
     margin-top: 50px;
 }
 
+.img-box {
+    animation: moveUpDown 3s ease-in-out infinite;
+    
+}
+
+.starbucks {
+    transition: 1s ease-in-out;
+
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-20px); 
+    }
+  }
+
 /* Image Styles */
 .content .img-box img {
     /* Visual */
@@ -173,19 +205,20 @@ header ul li a:hover {
 }
 
 /* Thumbnail Container */
-.thumb {
+#thumb {
     /* Positioning */
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: -100px;
     transform: translateX(-50%);
+    transition: 1s;
 
     /* Layout */
     display: flex;
 }
 
 /* Thumbnail List */
-.thumb li {
+#thumb li {
     /* Layout */
     display: inline-block;
     margin: 0 20px;
@@ -196,13 +229,13 @@ header ul li a:hover {
 }
 
 /* Thumbnail Hover Effect */
-.thumb li:hover {
+#thumb li:hover {
     /* Interaction */
     transform: translateY(-15px);
 }
 
 /* Thumbnail Image */
-.thumb li img {
+#thumb li img {
     /* Visual */
     max-width: 60px;
 }
@@ -221,12 +254,12 @@ header ul li a:hover {
 }
 
 /* Social Media Container */
-.social-media {
+#social-media {
     /* Positioning */
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: 30px;
-    transform: translateY(-50%);
+    transform: translateY(-250%);
 
     /* Layout */
     display: flex;
@@ -234,10 +267,12 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
 
+    transition: 1s;
+
 }
 
 /* Social Media Icons */
-.social-media li a {
+#social-media li a {
     /* Layout */
     display: inline-block;
     margin: 5px 0;
@@ -249,7 +284,7 @@ header ul li a:hover {
     transition: transform 0.5s ease;
 }
 
-.social-media li a:hover{
+#social-media li a:hover{
     transform: scale(0.7);
 }
 
@@ -268,6 +303,10 @@ header ul li a:hover {
 }
 
 .img3{
-    transform: rotate(340deg) scale(1.1);
+    transform: rotate(-15deg) scale(1.1);
 }
 
+
+::-webkit-scrollbar{
+    display: none;
+}
